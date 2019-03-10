@@ -1,0 +1,160 @@
+{
+	"routes": [
+		{
+			"path": "/me",
+			"name": "",
+			"componentName": "Employee",
+			"isChild": true
+		},
+		{
+			"path": "/me/users",
+			"name": "users",
+			"componentName": "Users",
+			"isChild": false
+		},
+		{
+			"path": "/me/users/user",
+			"name": "user",
+			"componentName": "UserBinding",
+			"isChild": false
+		},
+		{
+			"path": "/me/users/:id",
+			"name": "userDetail",
+			"componentName": "UserDetail",
+			"isChild": false
+		},
+		{
+			"path": "/orders",
+			"name": "orders",
+			"componentName": "OrderList",
+			"isChild": false
+		},
+		{
+			"path": "/orders/:id",
+			"name": "orderDetail",
+			"componentName": "OrderDetail",
+			"isChild": false
+		},
+		{
+			"path": "/orders/:id/items",
+			"name": "items",
+			"componentName": "ItemList",
+			"isChild": false
+		},
+		{
+			"path": "/orders/:id/parties",
+			"name": "parties",
+			"componentName": "PartyList",
+			"isChild": false
+		},
+		{
+			"path": "/customers",
+			"name": "customers",
+			"componentName": "CustomerList",
+			"isChild": true
+		},
+		{
+			"path": "/customers/:id",
+			"name": "customerDetail",
+			"componentName": "CustomerDetail",
+			"isChild": false
+		},
+		{
+			"path": "/customers/:id/addresses",
+			"name": "addresses",
+			"componentName": "AddressList",
+			"isChild": false
+		},
+		{
+			"path": "/customers/:id/activities",
+			"name": "customerActivities",
+			"componentName": "CustomerActivities",
+			"isChild": false
+		},
+		{
+			"path": "/activities",
+			"name": "activities",
+			"componentName": "ActivityList",
+			"isChild": false
+		},
+		{
+			"path": "/categories",
+			"name": "categories",
+			"componentName": "CategoryList",
+			"isChild": true
+		},
+		{
+			"path": "/products",
+			"name": "products",
+			"componentName": "ProductList",
+			"isChild": false
+		},
+		{
+			"path": "/products/:id",
+			"name": "productDetail",
+			"componentName": "ProductDetail",
+			"isChild": false
+		},
+		{
+			"path": "/components",
+			"name": "",
+			"componentName": "Components",
+			"isChild": true
+		},
+		{
+			"path": "/scroll",
+			"name": "",
+			"componentName": "ScrollPage",
+			"isChild": false
+		},
+		{
+			"path": "/toast",
+			"name": "",
+			"componentName": "Toast",
+			"isChild": false
+		},
+		{
+			"path": "/confirm",
+			"name": "",
+			"componentName": "Confirm",
+			"isChild": false
+		},
+		{
+			"path": "/alert",
+			"name": "",
+			"componentName": "Alert",
+			"isChild": false
+		},
+		{
+			"path": "/file",
+			"name": "",
+			"componentName": "FileUpload",
+			"isChild": false
+		},
+		{
+			"path": "/cell",
+			"name": "",
+			"componentName": "ScrollCell",
+			"isChild": false
+		}
+	],
+	"menu": [
+		{
+			"tabName": "Category",
+			"path": "/categories"
+		},
+		{
+			"tabName": "Component",
+			"path": "/components"
+		},
+		{
+			"tabName": "Customer",
+			"path": "/customers"
+		},
+		{
+			"tabName": "Me",
+			"path": "/me"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+server:
+  port: 9001
+  session:
+    cookie:
+      secure: true
+
+security:
+  ignored: /**
+
+# Spring specifics 
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wechat?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  http:
+    multipart.max-file-size: 5Mb

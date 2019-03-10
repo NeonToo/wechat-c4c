@@ -1,0 +1,22 @@
+server:
+  session:
+    cookie:
+      secure: true
+
+spring:
+  datasource:
+    jndi-name: java:comp/env/jdbc/DefaultDB
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    multipart.max-file-size: 5Mb
+      
+security:
+  ignored: /**

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>C4C Integration</title>
+    <link rel="stylesheet" type="text/css" href="css/weui.css">
+</head>
+<body>
+<div id="loading">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-loading weui-icon_toast"></i>
+        <p class="weui-toast__content">加载中</p>
+    </div>
+</div>
+<div id="app">
+    <loading :show="isLoading"></loading>
+    <toast :show="toast.show" :icon="toast.icon" :content="toast.content"></toast>
+    <confirm :show="confirm.show" :title="confirm.title" :content="confirm.content"
+             @confirm="confirm.onConfirm"
+             @cancel="confirm.onCancel"></confirm>
+    <alert :show="alert.show" :title="alert.title" :content="alert.title"
+           @ok="alert.onOk"></alert>
+    <transition :name="transitionDirection" mode="out-in">
+        <router-view></router-view>
+    </transition>
+</div>
+<script type="text/javascript" src="dist/vendor.js"></script>
+<script type="text/javascript" src="dist/main.js"></script>
+</body>
+</html>

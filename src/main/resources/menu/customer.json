@@ -1,0 +1,94 @@
+{
+	"routes": [
+		{
+			"path": "/me",
+			"name": "",
+			"componentName": "Customer",
+			"isChild": true
+		},
+		{
+			"path": "/orders",
+			"name": "customerOrders",
+			"componentName": "CustomerOrders",
+			"isChild": true
+		},
+		{
+			"path": "/orders/:id",
+			"name": "customerOrder",
+			"componentName": "CustomerOrder",
+			"isChild": false
+		},
+		{
+			"path": "/categories",
+			"name": "categories",
+			"componentName": "CategoryList",
+			"isChild": true
+		},
+		{
+			"path": "/components",
+			"name": "",
+			"componentName": "Components",
+			"isChild": true
+		},
+		{
+			"path": "/scroll",
+			"name": "",
+			"componentName": "ScrollPage",
+			"isChild": false
+		},
+		{
+			"path": "/toast",
+			"name": "",
+			"componentName": "Toast",
+			"isChild": false
+		},
+		{
+			"path": "/confirm",
+			"name": "",
+			"componentName": "Confirm",
+			"isChild": false
+		},
+		{
+			"path": "/alert",
+			"name": "",
+			"componentName": "Alert",
+			"isChild": false
+		},
+		{
+			"path": "/file",
+			"name": "",
+			"componentName": "FileUpload",
+			"isChild": false
+		},
+		{
+			"path": "/cell",
+			"name": "",
+			"componentName": "ScrollCell",
+			"isChild": false
+		},
+		{
+			"path": "/home",
+			"name": "",
+			"componentName": "Home",
+			"isChild": false
+		}
+	],
+	"menu": [
+		{
+			"tabName": "Category",
+			"path": "/categories"
+		},
+		{
+			"tabName": "Component",
+			"path": "/components"
+		},
+		{
+			"tabName": "Order",
+			"path": "/orders"
+		},
+		{
+			"tabName": "Me",
+			"path": "/me"
+		}
+	]
+}
